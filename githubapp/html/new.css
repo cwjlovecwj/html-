@@ -1,0 +1,122 @@
+ul,li,h1,h2,h3,p{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+html{ background:url(OIP-C.jfif) no-repeat #000  center top fixed;
+    background-size: cover
+}
+body{ width:1000px;
+    background:rgba(255,255,255,0.8);
+    margin:0 auto;
+    line-height:21px
+}
+.clear{ clear:both}
+a{ text-decoration:none}
+
+.menu li{ list-style:none}
+.logo{ background:#fff;
+    padding-bottom:20px
+}
+.logo img{ display:block;
+    width:70px;
+    margin-left:20px;
+}
+.banner{ position:relative;
+    margin-top:0px;
+}
+.banner img{ display:block}
+.menu{clear:both;
+    width:100%;
+    text-align:center;
+    background:#fbc05c
+}
+.menu li a{ color:#fff}
+.menu li { border-radius:30px;
+    float:left;
+    margin:12px;
+    padding:8px 13px ;
+    width:148px
+}
+
+.right{ float:right;
+    width:660px;
+    padding:20px
+}
+.left{ min-height:300px;
+    float:left;
+    width:480px;
+    margin-left:30px;
+    padding:10px
+}
+.content { clear:both;
+    padding-bottom:20px;
+    font-size:14px;
+    display:block ;
+    color:#333;
+    width:100%
+}
+.avc{ font-size:20px;
+    line-height:40px;
+    margin-top:30px
+}
+.end{ clear:both;
+    background:#fbc05c;
+    color:#fff;
+    padding:20px 0;
+    text-align:center;
+}
+.produce img{  margin:0 20px 20px 0}
+.produce { line-height:30px}
+.pad{ padding:20px;
+    display:block
+}
+.pics p{ margin:1px;
+    text-align:center
+}
+
+.imglist{ width:94%;
+    margin:0 auto
+}
+.imglist li{ float:left;
+    width:290px;
+    margin:10px;
+    text-align:center
+}
+.news li{ padding:5px;}
+
+.title{ text-align:center;
+    color:#F00;
+    padding:10px
+}
+.fl{ float:left}
+
+.msg>div{ padding:10px}
+.con{ max-width:700px;
+    margin:20px auto
+}
+.bar{ border:#fff dotted 1px;
+    margin:20px; clear:both;
+    background:#fbc05c;
+    font-weight:bold;
+    padding:12px
+}
+.feedback{ padding:30px;
+    margin:0 auto;
+    width:450px
+}
+.feedback li{ margin:15px}
+.feedback  input{ padding:10px;
+    border:#CC6633 solid 1px
+}
+.btn{ background:#FF9966;
+    color:#000;
+    border:none;
+    padding:10px 30px;
+    margin-left:140px
+}
+.feedback span{ float:left;}
+.news{
+    width: 560px;
+    height: 50px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册</title>
+    <script>
+            function validateEmail(email) {
+                var re = /\S+@\S+\.\S+/;
+                return re.test(email);
+            }
+            function isGoogleEmail(email) {
+                var re = /@gmail\.com$/;
+                return re.test(email);
+            }
+            function isqqEmail(email) {
+                var re = /\d+@qq\.com$/;
+                return re.test(email);
+            }
+           
+
+            function saveUser() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                var email = document.getElementById("email").value;
+
+                if (username === "" || password === "" || email === "") {
+                    alert("请输入用户名、密码和邮箱！");
+                    return;
+                }
+
+                if (!validateEmail(email)) {
+                    alert("请输入有效的邮箱地址！");
+                    return;
+                }
+
+                if (!isGoogleEmail(email)) {
+                    alert("请输入谷歌邮箱地址！");
+                    return;
+                }
+
+                // 在这里使用 JavaScript 保存用户名、密码和邮箱
+
+                alert("用户注册成功！");
+            }
+        </script>
+                 
+                <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f0f0f0;
+                }
+
+                h1 {
+                    color: #333;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+
+                form {
+                    width: 300px;
+                    margin: 0 auto;
+                }
+
+                label {
+                    display: block;
+                    margin: 10px 0;
+                }
+
+                input[type="text"], input[type="password"] {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+            </style>
+            </head>
+            <body>
+                <h1>daimi de 网页</h1>
+                <form>
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <input type="button" value="注册" onclick="saveUser()">
+                    <input type="button" value="返回登录" onclick="window.open('index.html')">
+                </form>
+            </body>
+            </html>
